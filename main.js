@@ -111,7 +111,7 @@ alert(`*Tabla del ${num1}*\n${tablaJson}`);
 let total = 0;
 alert('*Suma de los números pares del 1 al 100*');
 for (let i = 0; i <= 100; i++) {
-  if (i % 2 == 0) {
+  if (i % 2 === 0) {
     // debugger;
     total = total + i;
   }
@@ -152,7 +152,8 @@ alert(`*Array con objetos persona usando alert*\n${arrayPersonasJson}`);
 
 for (let key in arrayPersonas) {
   alert(`*Array con objetos persona usando console.log()*`);
-  console.log(key, arrayPersonas[key]); //? imprimo  objetos del array por consola
+  //? imprimo  objetos del array por consola
+  console.log(key, arrayPersonas[key]);
 }
 
 // 13. Función para Calcular Promedio: Crea una función que reciba un array de números y devuelva su promedio.
